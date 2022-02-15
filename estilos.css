@@ -16,12 +16,17 @@ max-width: 100%; margin:0 auto; padding:6em 0 6em 0;
 .campo-form {
 width:100%; height:2em; margin:2px 0 6px;  box-sizing: border-box; padding:0.5em 0 0 0.5em; color:black; 
 }
-.banner6{
-		text-align:left;
-		width:100%;
-		display:block;
-		overflow:auto;
-		padding:1em;
+.grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 5%;
+	justify-items: center;
+	align-items: center;
+	background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
+}
+.grid img{
+	width: 50%;
+	text-align: center;
 }
 textarea:focus {
     background-color: #00ff00;
@@ -56,13 +61,7 @@ section {
 padding:0;
 margin: 0;
 position: top;
-}
-header{
-padding-top:2e;
-}
-.logo img{
-width:8em;
-padding:0;
+z-index: 4;
 }
 header nav{
 	position: fixed;
@@ -104,6 +103,14 @@ text-align:center;
 display:block;
 overflow: auto;
 margin:0;
+background-image: linear-gradient(rgba(241, 238, 7, 0.514),white);
+}
+.banner6{
+	text-align:left;
+	width:100%;
+	display:block;
+	overflow:auto;
+	padding:1em;
 }
 .banner2 {
 text-align:left;
@@ -210,6 +217,12 @@ display:none;
 header nav ul li a {
 	display: block;
 }
+.logo img{
+	width:8em;
+	padding:0;
+	position: fixed;
+	z-index: 6;
+	}
 header img{
 	float:center;
 }
@@ -306,7 +319,6 @@ overflow: auto;
 background: white;
 height: 12.5%;
 width: 100%;
-position: fixed;
 }
 header nav{
 	top: 0;
@@ -314,7 +326,6 @@ header nav{
 	margin:0 auto;
 	height:80px;
 	padding:1.5em 0;
-	position:fixed;
 	bottom: 0;
 	width: 80%;
 	background: white;
@@ -406,13 +417,6 @@ width:100%;
 display:inline-block;
 overflow:auto;
 }
-.banner5{
-max-width: 50%; margin-right:16em; display:inline-block; overflow:auto; float:right;
-}
-.banner5 img{
-width:100%;
-padding: 4em 0;
-}
 .btn-form {
 display: inline-block; border:0; background: black; height: 4em;  padding: 0 20px; color:#fff;text-transform: uppercase;
 }
@@ -445,4 +449,5 @@ list-style:none;
 padding-top:1em;
 padding-left:1em;
 padding-right:1em;
+}
 }
