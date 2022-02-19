@@ -1,28 +1,34 @@
 * {
-	margin: 0;
-	padding: 0.5em;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-family: Roboto;
-	src: url(Roboto.ttf);
-	color: black;
-	list-style:none;
-	letter-spacing: −2em;
-	background-color: rgba(255, 255, 179, 0.067);
+margin: 0;
+padding: 0.5em;
+box-sizing: border-box;
+text-decoration: none;
+font-family: Roboto;
+src: url(Roboto.ttf);
+list-style:none;
+letter-spacing: −2em;
+background-color: rgba(255, 255, 179, 0.067);
 }
 .form-consulta {
-max-width: 100%; margin:0 auto; padding:6em 0 6em 0; 
+max-width: 100%;
+margin:0 auto;
+padding:6em 0 6em 0; 
 }
 .campo-form {
-width:100%; height:2em; margin:2px 0 6px;  box-sizing: border-box; padding:0.5em 0 0 0.5em; color:black; 
+width:100%;
+height:2em;
+margin:2px 0 6px;
+box-sizing: border-box;
+padding:0.5em 0 0 0.5em;
+color:black;
 }
 .grid img{
-	width: 50%;
-	justify-items: center;
-	align-items: center;
+width: 50%;
+justify-items: center;
+align-items: center;
 }
 textarea:focus {
-    background-color: #00ff00;
+background-color: #00ff00;
 }
 label span {
 color: #00ff00
@@ -31,7 +37,13 @@ textarea {
 min-height: 10em!important;
 }
 .btn-form {
-display: inline-block; background: black; height: 4em;  padding: 0 20px; color:#fff;text-transform: uppercase
+display: grid; 
+background: red; 
+height: 4em;  
+padding: 0 20px; 
+color:#fff;
+text-transform: uppercase;
+border: none;
 }
 .btn-form:hover {
 background: #00ff00
@@ -44,7 +56,7 @@ display:block;
 margin:auto;
 text-align:center;
 overflow: auto;
-background: white;
+background: red;
 height: 100%;
 width: 100%;
 left: 0;
@@ -57,29 +69,29 @@ position: top;
 z-index: 4;
 }
 header nav{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left:-100%;
-	width: 100%;
-	z-index: 2;
-	padding: 3em 1em 3em;
-	background: white;
-	transition: all 0.75s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
-	display:block;
-	overflow:auto;
+position: fixed;
+top: 0;
+bottom: 0;
+left:-100%;
+width: 100%;
+z-index: 2;
+padding: 3em 1em 3em;
+background: white;
+transition: all 0.75s ease;
+font-size: 1.2em;
+overflow-y: auto;
+display:block;
+overflow:auto;
 }
 #menu_on{
-	display: block;
-	position: absolute;
-	z-index: 2;
-	margin-left:-3em;
+display: block;
+position: absolute;
+z-index: 2;
+margin-left:-3em;
 }
 .visible_menu nav{
-	left: 0;
-	opacity: 1;
+left: 0;
+opacity: 1;
 }
 .hamburguesa{
 display:none;
@@ -101,11 +113,11 @@ align-items: center;
 background-image: linear-gradient(rgba(241, 238, 7, 0.514),white);
 }
 .banner6{
-	text-align:left;
-	width:100%;
-	display:block;
-	overflow:auto;
-	padding:1em;
+text-align:left;
+width:100%;
+display:block;
+overflow:auto;
+padding:1em;
 }
 .banner2 {
 text-align:left;
@@ -148,20 +160,23 @@ overflow:auto;
 text-align:center;
 }
 footer {
-	display:block;
-	overflow:auto;
-	text-align:left;
-	padding:0;
-	margin:0;
+display:block;
+overflow:auto;
+text-align:left;
+padding:0;
+margin:0;
+background-color: red;
 }
 footer p{
 padding:0;
 margin:0;
+color: white;
 }
 footer ul li{
 padding:0;
 margin:0;
 float:left;
+color: white;
 }
 .redes{
 display:block;
@@ -198,55 +213,57 @@ overflow:auto;
 text-align:center;
 }
 .trabajos video{
-	width:100%;
-	margin-right:0em;
-	display:block;
-	overflow:auto;
-	text-align:center;
-	animation-play-state:paused;
-	}
+width:100%;
+margin-right:0em;
+display:block;
+overflow:auto;
+text-align:center;
+animation-play-state:paused;
+}
 .banner5{
 display:none;
 }
 @media (min-width: 35em){
 header nav ul li a {
-	display: block;
+display: block;
 }
 .logo img{
-	width:8em;
-	padding:0;
-	position: fixed;
-	z-index: 6;
-	}
-header img{
-	float:center;
+width:8em;
+padding:0;
+position: fixed;
+z-index: 6;
 }
-header nav { 
-	float: left;
-	height:100%;
-	display:block;
-	transition: all 0.01s ease;
+header img{
+float:center;
+}
+header nav {
+float: left;
+height:100%;
+display:block;
+transition: all 0.01s ease;
 }
 header nav ul {
-	overflow: auto;
+overflow: auto;
 }
 .grid{
-	display: grid;
-	grid-template-columns: 80%;
-	grid-column-gap: 5%;
-	justify-items: center;
-	align-items: center;
-	background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
+display: grid;
+grid-column-gap: 5%;
+justify-items: center;
+align-items: center;
+background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
+}
+.grid2 img{
+width: 80%;
 }
 .banner{
-	margin:0 auto;
-	width: 60%;
+margin:0 auto;
+width: 60%;
 }
 footer {
 display:block;
 overflow:auto;
 width:100%;
-padding: 0.5em 0.5em 0.5em 0;
+padding: 2em;
 }
 .bajadita{
 display:block;
@@ -265,29 +282,30 @@ list-style:none;
 }
 .redes ul li {
 padding-top:1em;
-padding-right:1em;}
+padding-right:1em;
+}
 }
 @media (min-width: 60em){
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	line-height:120%;
-	letter-spacing: -1px;
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+line-height:120%;
+letter-spacing: -1px;
 }
 main {
-	font-size: 1em;
-	line-height: 1.5em;
-	padding-top: 60px; 
+font-size: 1em;
+line-height: 1.5em;
+padding-top: 60px; 
 }
 .grid{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 5%;
-	justify-items: center;
-	align-items: center;
-	background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
+display: grid;
+grid-template-columns: 42% 42%;
+grid-column-gap: 5%;
+justify-items: center;
+align-items: center;
+background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
 }
 .hamburguesa{
 display:none;
@@ -296,11 +314,11 @@ display:none;
 	display: none;
 }
 .banner6{
-	text-align:center;
-	width:50%;
-	display:block;
-	overflow:auto;
-	padding:1em;
+text-align:center;
+width:50%;
+display:block;
+overflow:auto;
+padding:1em;
 }
 header nav a{
 display: none;
@@ -327,27 +345,26 @@ header{
 display:block;
 padding-top: 0.5em;
 overflow: auto;
-background: white;
 height: 12.5%;
 width: 100%;
 }
 header nav{
-	top: 0;
-	left:17em;
-	margin:0 auto;
-	height:80px;
-	padding:1.5em 0;
-	bottom: 0;
-	width: 80%;
-	background: white;
-	transition: all 0.0001s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
+top: 0;
+left:17em;
+margin:0 auto;
+height:80px;
+padding:1.5em 0;
+bottom: 0;
+width: 80%;
+background: white;
+transition: all 0.0001s ease;
+font-size: 1.2em;
+overflow-y: auto;
 }
 header nav ul li {
-	padding: 0 0.5em 0 0.5em;
-	display:inline-block;
-	overflow:auto;
+padding: 0 0.5em 0 0.5em;
+display:inline-block;
+overflow:auto;
 }
 header nav ul li:hover{
 background: #ff00ff;
@@ -365,8 +382,8 @@ padding-top:3em;
 width: 80%;
 }
 .banner1{
-	padding:0.5em 6em 0 6em;
-	width: 100%;
+padding:0.5em 6em 0 6em;
+width: 100%;
 }
 .banner{
 width:100%;
@@ -411,28 +428,24 @@ padding:2em 0;
 background: #ff00ff;
 }
 .form-consulta {
-max-width: 39%; margin-left:7em; padding:1em 0 em 0; display:inline-block; overflow:auto;
+margin-left:7em; 
+padding:1em 0 em 0; 
+display:inline-block; 
+overflow:auto;
 }
 .campo-form {
-width:100%; height:2em; margin:2px 0 6px;  box-sizing: border-box; padding:0.5em 0 0 0.5em; color:black;
-}
-label span {
-color: #00ff00
-}
-textarea {
-min-height: 10em!important;
+width:100%; 
+height:2em; 
+margin:2px 0 6px; 
+box-sizing: border-box; 
+padding:0.5em 0 0 0.5em;
+color:black;
 }
 .banner4{
 padding-top: 6em;
 width:100%;
 display:inline-block;
 overflow:auto;
-}
-.btn-form {
-display: inline-block; border:0; background: black; height: 4em;  padding: 0 20px; color:#fff;text-transform: uppercase;
-}
-.btn-form:hover {
-background: #ff00ff
 }
 .bajadita{
 display:block;
@@ -442,11 +455,11 @@ float:left;
 padding:0.5em 0.5em 0.5em 6em;
 }
 footer {
-	display:block;
-	overflow:auto;
-	text-align:left;
-	padding: 0.5em;
-	bottom:0;
+display:block;
+overflow:auto;
+text-align:left;
+padding: 0.5em;
+bottom:0;
 }
 .redes{
 display:block;
@@ -460,106 +473,6 @@ list-style:none;
 padding-top:1em;
 padding-left:1em;
 padding-right:1em;
-}
-* {
-	margin: 0;
-	padding: 0.5em;
-	box-sizing: border-box;
-	text-decoration: none;
-	font-family: Roboto;
-	src: url(Roboto.ttf);
-	color: black;
-	list-style:none;
-	letter-spacing: −2em;
-	background-color: rgba(255, 255, 179, 0.067);
-}
-.form-consulta {
-max-width: 100%; margin:0 auto; padding:6em 0 6em 0; 
-}
-.campo-form {
-width:100%; height:2em; margin:2px 0 6px;  box-sizing: border-box; padding:0.5em 0 0 0.5em; color:black; 
-}
-.grid{
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 5%;
-	justify-items: center;
-	align-items: center;
-	background-image: linear-gradient(white,rgba(241, 238, 7, 0.514));
-}
-.grid img{
-	width: 50%;
-	text-align: center;
-}
-textarea:focus {
-    background-color: #00ff00;
-}
-label span {
-color: #00ff00
-}
-textarea {
-min-height: 10em!important;
-}
-.btn-form {
-display: inline-block; background: black; height: 4em;  padding: 0 20px; color:#fff;text-transform: uppercase
-}
-.btn-form:hover {
-background: #00ff00
-}
-body{
-padding-top:0;
-}
-header{
-display:block;
-margin:auto;
-text-align:center;
-overflow: auto;
-background: white;
-height: 100%;
-width: 100%;
-left: 0;
-top: 0;
-}
-section {
-padding:0;
-margin: 0;
-position: top;
-z-index: 4;
-}
-header nav{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left:-100%;
-	width: 100%;
-	z-index: 2;
-	padding: 3em 1em 3em;
-	background: white;
-	transition: all 0.75s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
-	display:block;
-	overflow:auto;
-}
-#menu_on{
-	display: block;
-	position: absolute;
-	z-index: 2;
-	margin-left:-3em;
-}
-.visible_menu nav{
-	left: 0;
-	opacity: 1;
-}
-.hamburguesa{
-display:none;
-}
-.slider{
-padding: 10em 0 10em 0;
-}
-.slider img{
-width:100%;
-text-align:center;
 }
 .banner{
 text-align:center;
@@ -567,351 +480,5 @@ display:block;
 overflow: auto;
 margin:0;
 background-image: linear-gradient(rgba(241, 238, 7, 0.514),white);
-}
-.banner6{
-	text-align:left;
-	width:100%;
-	display:block;
-	overflow:auto;
-	padding:1em;
-}
-.banner2 {
-text-align:left;
-width:100%;
-display:block;
-overflow:auto;
-padding:1em;
-}
-.bannerimg{
-text-align:center;
-}
-.bannerholi{
-padding-top: 4em; 
-width:60%; 
-margin:0 auto;
-text-align:center;
-}
-.banner2 img{
-width:100%;
-display:block;
-overflow:auto;
-text-align: left; 
-padding-top: 4em; 
-padding-bottom: 4em;
-}
-.banner2 h2{
-padding:0;
-}
-.banner3{
-padding:0;
-margin-left:-1.5em;
-margin-right:-1em;
-}
-.banner3 img{
-font-size:100%;
-width:100%;
-margin-right:0em;
-display:block;
-overflow:auto;
-text-align:center;
-}
-footer {
-	display:block;
-	overflow:auto;
-	text-align:left;
-	padding:0;
-	margin:0;
-}
-footer p{
-padding:0;
-margin:0;
-}
-footer ul li{
-padding:0;
-margin:0;
-float:left;
-}
-.redes{
-display:block;
-overflow:auto;
-width:100%;
-float:left;
-list-style:none;
-margin:0;
-padding:0;
-}
-.intro{
-text-align:left;
-width:100%;
-padding:0;
-}
-.gracias{
-text-align:center;
-max-width:100%;
-}
-.gracias img{
-width:100%;
-padding: 8em 0em 6em 0em;
-}
-.trabajos{
-padding:0;
-margin-left:-1.5em;
-margin-right:-1em;
-}
-.trabajos img{
-width:100%;
-margin-right:0em;
-display:block;
-overflow:auto;
-text-align:center;
-}
-.trabajos video{
-	width:100%;
-	margin-right:0em;
-	display:block;
-	overflow:auto;
-	text-align:center;
-	animation-play-state:paused;
-	}
-.banner5{
-display:none;
-}
-@media (min-width: 35em){
-header nav ul li a {
-	display: block;
-}
-.logo img{
-	width:8em;
-	padding:0;
-	position: fixed;
-	z-index: 6;
-	}
-header img{
-	float:center;
-}
-header nav { 
-	float: left;
-	height:100%;
-	display:block;
-	transition: all 0.01s ease;
-}
-header nav ul {
-	overflow: auto;
-}
-.banner{
-	margin:0 auto;
-	width: 60%;
-}
-footer {
-display:block;
-overflow:auto;
-width:100%;
-padding: 0.5em 0.5em 0.5em 0;
-}
-.bajadita{
-display:block;
-overflow:auto;
-width:45%;
-float:left;
-padding:0.5em 0.5em 0.5em 0.5em;
-}
-.redes{
-display:block;
-overflow:auto;
-width:45%;
-float:right;
-padding:0.5em 0 0.5em 0;
-list-style:none;
-}
-.redes ul li {
-padding-top:1em;
-padding-right:1em;}
-}
-@media (min-width: 60em) {
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-	line-height:120%;
-	letter-spacing: -1px;
-}
-main {
-	font-size: 1em;
-	line-height: 1.5em;
-	padding-top: 60px; 
-}
-.hamburguesa{
-display:none;
-}
-#menu_on{
-	display: none;
-}
-.banner6{
-	text-align:center;
-	width:50%;
-	display:block;
-	overflow:auto;
-	padding:1em;
-}
-header nav a{
-display: none;
-}
-.logo{
-width: 15em; 
-margin-left: 7em;
-margin-top: 1em; 
-text-align:center;
-}
-.logo img{
-width:8em;
-padding-top:0.5em;
-}
-.gracias{
-text-align:center;
-max-width:50%;
-}
-.gracias img{
-width:100%;
-padding: 8em 0em 6em 0em;
-}
-header{
-display:block;
-padding-top: 0.5em;
-overflow: auto;
-background: white;
-height: 12.5%;
-width: 100%;
-}
-header nav{
-	top: 0;
-	left:17em;
-	margin:0 auto;
-	height:80px;
-	padding:1.5em 0;
-	bottom: 0;
-	width: 80%;
-	background: white;
-	transition: all 0.0001s ease;
-	font-size: 1.2em;
-	overflow-y: auto;
-}
-header nav ul li {
-	padding: 0 0.5em 0 0.5em;
-	display:inline-block;
-	overflow:auto;
-}
-header nav ul li:hover{
-background: #ff00ff;
-}
-.slider{
-text-align:left;
-padding:5em 15em 5em 15em;
-}
-.slider h1{
-text-align: center;
-padding-bottom: 3em;
-padding-top:3em;
-}
-.slider img{
-width: 80%;
-}
-.banner1{
-	padding:0.5em 6em 0 6em;
-	width: 100%;
-}
-.banner{
-width:100%;
-height: 100%;
-padding:5em;
-}
-.banner2{
-width:50%;
-margin:0 1em 0 1em;
-display:inline-block;
-overflow:auto;
-}
-.banner2, img{
-width: 20%;
-text-align:left;
-}
-.banner3{
-width: 44%;
-margin:0 1em 0 1em;
-display:inline-block;
-overflow:auto;
-margin:1em;
-}
-.banner3, img{
-text-align:left;
-}
-.trabajos{
-padding: 0;
-margin:0 auto;
-width:40%;
-}
-.trabajos img{
-width:100%;
-padding:1em 0;
-}
-.intro{
-text-align:left;
-width:100%;
-padding:2em 0;
-}
-.banner3:hover{
-background: #ff00ff;
-}
-.form-consulta {
-max-width: 39%; margin-left:7em; padding:1em 0 em 0; display:inline-block; overflow:auto;
-}
-.campo-form {
-width:100%; height:2em; margin:2px 0 6px;  box-sizing: border-box; padding:0.5em 0 0 0.5em; color:black;
-}
-label span {
-color: #00ff00
-}
-textarea {
-min-height: 10em!important;
-}
-.banner4{
-padding-top: 6em;
-width:100%;
-display:inline-block;
-overflow:auto;
-}
-.btn-form {
-display: inline-block; border:0; background: black; height: 4em;  padding: 0 20px; color:#fff;text-transform: uppercase;
-}
-.btn-form:hover {
-background: #ff00ff
-}
-.bajadita{
-display:block;
-overflow:auto;
-width:45%;
-float:left;
-padding:0.5em 0.5em 0.5em 6em;
-}
-footer {
-	display:block;
-	overflow:auto;
-	text-align:left;
-	padding: 0.5em;
-	bottom:0;
-}
-.redes{
-display:block;
-overflow:auto;
-width:45%;
-float:right;
-padding:0.5em 0.5em 0.5em 7.3em ;
-list-style:none;
-}
-.redes ul li{
-padding-top:1em;
-padding-left:1em;
-padding-right:1em;
-}
 }
 }
