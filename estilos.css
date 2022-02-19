@@ -1,6 +1,5 @@
 * {
-margin: 0;
-padding: 0.5em;
+margin: 0.5em;
 box-sizing: border-box;
 text-decoration: none;
 font-family: Roboto;
@@ -349,12 +348,10 @@ height: 12.5%;
 width: 100%;
 }
 header nav{
-top: 0;
 left:17em;
 margin:0 auto;
 height:80px;
 padding:1.5em 0;
-bottom: 0;
 width: 80%;
 background: white;
 transition: all 0.0001s ease;
