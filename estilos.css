@@ -6,7 +6,10 @@ font-family: Roboto;
 src: url(Roboto.ttf);
 list-style:none;
 letter-spacing: −2em;
-background-color: rgba(255, 255, 179, 0.067);
+}
+.grid a{
+color: black;
+text-decoration: none;
 }
 .form-consulta {
 max-width: 100%;
@@ -33,7 +36,7 @@ label span {
 color: #00ff00
 }
 textarea {
-min-height: 10em!important;
+min-height: 10em !important;
 }
 .btn-form {
 display: grid; 
@@ -45,7 +48,8 @@ text-transform: uppercase;
 border: none;
 }
 .btn-form:hover {
-background: #00ff00
+background: #959595;
+color: black;
 }
 body{
 padding-top:0;
@@ -223,9 +227,6 @@ animation-play-state:paused;
 display:none;
 }
 @media (min-width: 35em){
-header nav ul li a {
-display: block;
-}
 .logo img{
 width:8em;
 padding:0;
@@ -235,14 +236,20 @@ z-index: 6;
 header img{
 float:center;
 }
-header nav {
+header nav{
 float: left;
 height:100%;
 display:block;
 transition: all 0.01s ease;
 }
-header nav ul {
-overflow: auto;
+header nav ul li a{
+display: grid;
+color:black;
+text-decoration: none;
+}
+header nav a{
+color: black;
+text-decoration: none;
 }
 .grid{
 display: grid;
@@ -277,7 +284,6 @@ overflow:auto;
 width:45%;
 float:right;
 padding:0.5em 0 0.5em 0;
-list-style:none;
 }
 .redes ul li {
 padding-top:1em;
@@ -351,7 +357,7 @@ header nav{
 left:17em;
 margin:0 auto;
 height:80px;
-padding:1.5em 0;
+padding:1em;
 width: 80%;
 background: white;
 transition: all 0.0001s ease;
@@ -359,12 +365,18 @@ font-size: 1.2em;
 overflow-y: auto;
 }
 header nav ul li {
-padding: 0 0.5em 0 0.5em;
+padding: 1em;
 display:inline-block;
 overflow:auto;
+color:black;
 }
 header nav ul li:hover{
-background: #ff00ff;
+background: #959595;
+color: black;
+text-decoration: none;
+}
+header nav ul li a{
+color:black
 }
 .slider{
 text-align:left;
@@ -373,7 +385,7 @@ padding:5em 15em 5em 15em;
 .slider h1{
 text-align: center;
 padding-bottom: 3em;
-padding-top:3em;
+padding-top: 3em;
 }
 .slider img{
 width: 80%;
@@ -427,7 +439,7 @@ background: #ff00ff;
 .form-consulta {
 margin-left:7em; 
 padding:1em 0 em 0; 
-display:inline-block; 
+display:grid; 
 overflow:auto;
 }
 .campo-form {
