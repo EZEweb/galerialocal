@@ -1,5 +1,4 @@
 * {
-margin: 0.5em 0 0 0.5em;
 box-sizing: border-box;
 text-decoration: none;
 font-family: Roboto;
@@ -13,12 +12,13 @@ text-decoration: none;
 h4{
 font-size: 1.5rem;
 font-family:Red October;
-src: url(red october.ttf)
+src: url(redoctober.ttf);
 }
 .form-consulta {
 max-width: 100%;
 margin:0 auto;
 padding:6em 0 6em 0; 
+color: black;
 }
 .campo-form {
 width:100%;
@@ -71,7 +71,6 @@ z-index: 2;
 padding: 3em 1em 3em;
 background: white;
 transition: all 0.75s ease;
-font-size: 1.2em;
 overflow-y: auto;
 display:block;
 overflow:auto;
@@ -206,14 +205,23 @@ animation-play-state:paused;
 .banner5{
 display:none;
 }
+body{
+background-color: #969696;
+color:black;
+}
 @media (min-width: 35em){
 *{
-margin:0;
+margin: 0.5em 0 0 0.5em;
 padding:0;
 }
+body{
+background-color: #969696;
+color:black;
+}
 .logo img{
-width:8em;
-padding:1em 0;
+width:20%;
+left: 0;
+padding:1em;
 position: fixed;
 z-index: 3;
 background-color: white;
@@ -229,6 +237,22 @@ display: grid;
 color:black;
 text-decoration: none;
 }
+.grid4{
+display:grid;
+width:80%;
+margin-left:20%;
+background-color: #969696;
+grid-template-columns: 45% 45%;
+grid-column-gap: 5%;
+padding-top: 4em;
+}
+.grid4 img{
+width: 100%;
+padding:5%;
+}
+.grid4 h4{
+grid-template-columns: 100%;
+}
 .grid{
 display: grid;
 grid-column-gap: 5%;
@@ -237,17 +261,18 @@ align-items: center;
 background-color: #969696;
 }
 .grid2 img{
-width: 80%;
+width: 100%;
 }
 .banner{
 margin:0 auto;
 width: 60%;
 }
 footer {
-display:block;
-overflow:auto;
 width:100%;
-padding: 2em;
+padding: 1em;
+}
+footer p{
+padding: 1rem;
 }
 .bajadita{
 display:block;
@@ -276,16 +301,38 @@ border: 0;
 box-sizing: border-box;
 line-height:120%;
 }
-main {
-font-size: 1em;
-line-height: 1.5em;
-}
 .grid{
 display: grid;
 width:80%;
 margin-left:20%;
 grid-template-columns: 42% 42%;
 grid-column-gap: 5%;
+}
+.grid6{
+display: grid;
+width:80%;
+margin-left:20%;
+grid-template-columns: 35% 35%;
+grid-column-gap: 5%;
+padding: 6% 0 10% 9%;
+}
+.grid6 img{
+width: 100%;
+}
+h1{
+font-size: 3rem;
+font-family:Red October;
+color: black;
+}
+h3{
+font-size: 1.5rem;
+font-family: roboto;
+color: black;
+}
+h5{
+font-size: 1.5rem;
+font-family:Roboto;
+color: black; 
 }
 .hamburguesa{
 display:none;
@@ -314,45 +361,42 @@ display:grid;
 width:80%;
 margin-left:20%;
 text-align:center;
+justify-content: center;
 background-color: #969696;
 grid-template-columns: 45% 45%;
-grid-column-gap: 5%;
+grid-column-gap: 1%;
 padding-top: 4em;
+color: black;
 }
 .grid4 img{
-width: 100%;
-padding:5%;
+width: 80%;
 }
 .grid5{
 width:80%;
 margin-left:20%;
-text-align:center;
+justify-content: center;
+padding: 0 5% auto;
 display:grid;
 background-color: #969696;
-grid-template-columns: 20% 20% 20% 20%;
+grid-template-columns: 15% 15% 15% 15%;
 grid-column-gap: 5%;
+color: black;
 }
 .grid5 img{
 width: 100%;
-padding:5%;
+padding:10%;
 }
 header nav{
 display:grid;
 left:0;
 height:100%;
-padding:1em;
+padding:10% 1em 1em 1em;
 width: 20%;
 background: red;
-font-size: 1.2em;
-overflow-y: auto;
-}
-header nav ul{
-padding-top:4em;
 }
 header nav ul li {
 padding: 1em;
 display:grid;
-overflow:auto;
 color:black;
 }
 header nav ul li:hover{
