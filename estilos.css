@@ -40,7 +40,8 @@ min-height: 10em !important;
 .btn-form {
 display: grid; 
 background: red; 
-height: 4em;  
+height: 4em;
+width:50%;
 padding: 0 20px; 
 color:#fff;
 text-transform: uppercase;
@@ -49,6 +50,23 @@ border: none;
 .btn-form:hover {
 background: #959595;
 color: black;
+}
+.grid4 img{
+width: 100%;
+padding:5%;
+}
+.grid5{
+padding: 0 5%;
+}
+.grid5 img{
+width: 100%;
+padding: 5% 20%;
+}
+.grid6 img{
+width: 100%;
+}
+.grid6{
+padding:5%;
 }
 section {
 padding:0;
@@ -322,7 +340,7 @@ header nav{
 display:grid;
 left:0;
 height:100%;
-padding:10% 1em 1em 1em;
+padding:7% 0 1em 0;
 width: 20%;
 background: red;
 }
@@ -475,6 +493,7 @@ background-color: #969696;
     .logo img{
     width:20%;
     left: 0;
+    top:0;
     padding:1em;
     position: fixed;
     z-index: 3;
