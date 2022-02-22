@@ -82,11 +82,14 @@ left:-100%;
 width: 100%;
 z-index: 2;
 padding: 3em 1em 3em;
-background: white;
+background: red;
 transition: all 0.75s ease;
 overflow-y: auto;
 display:block;
 overflow:auto;
+}
+header nav a{
+color:black;
 }
 #menu_on{
 display: block;
