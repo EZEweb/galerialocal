@@ -67,9 +67,17 @@ width: 100%;
 }
 .grid6{
 padding:5%;
+top:0;
+}
+.grid6 h5{
+background-color:white;
+padding:5%;
+margin:0;
+box-sizing: border-box; 
+border:solid 10px;
+border-color: black;
 }
 section {
-padding: 2em;
 margin: 0;
 position: top;
 z-index: 4;
@@ -242,10 +250,13 @@ justify-items: center;
 align-items: center;
 }
 .form-consulta{
-    padding:0;
+padding:5%;
 }
 footer .redes ul li a{
 margin: 1em;
+}
+img{
+width:100%
 }
 @media (min-width: 60em){
 * {
@@ -275,9 +286,10 @@ background-color: #969696;
 display: grid;
 width:80%;
 margin-left:20%;
-grid-template-columns: 35% 35%;
+grid-template-columns: 40% 40%;
 grid-column-gap: 5%;
-padding: 6% 0 10% 9%;
+padding: 6% 0 10% 10%;
+position:absolute;
 }
 .grid6 img{
 width: 100%;
@@ -340,9 +352,13 @@ height:80%;
 border-color: black;
 transform: translate(10px, 20px);
 }
+img{
+width:100%
+}
 .grid4{
 display:grid;
 width:80%;
+margin-top:15%;
 margin-left:20%;
 text-align:center;
 justify-content: center;
@@ -384,7 +400,7 @@ display:grid;
 color:black;
 }
 header nav ul li:hover{
-background: #959595;
+background: #969696;
 color: black;
 text-decoration: none;
 }
@@ -430,6 +446,10 @@ width:50%;
 margin:0 1em 0 1em;
 display:inline-block;
 overflow:auto;
+}
+section header .headerartista img{
+width:100%;
+z-index:2;
 }
 .banner2, img{
 width: 20%;
@@ -520,6 +540,10 @@ background-color: #969696;
     *{
     padding:0;
     }
+.section header .headerartista img{
+width:100%;
+z-index:2;
+}
     body{
     background-color: #969696;
     color:black;
