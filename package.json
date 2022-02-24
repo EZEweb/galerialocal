@@ -1,0 +1,25 @@
+{
+  "name": "galeria-local",
+  "version": "1.0.0",
+  "description": "SASS proyecto",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EZEweb/galerialocal.git"
+  },
+  "author": "Ezequiel Rico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EZEweb/galerialocal/issues"
+  },
+  "homepage": "https://github.com/EZEweb/galerialocal#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
