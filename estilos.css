@@ -1,23 +1,76 @@
-* {
-box-sizing: border-box;
-text-decoration: none;
+*{
 font-family: Roboto;
 src: url(Roboto.ttf);
+padding:0;
 list-style:none;
+}
+body{
+background-color: #969696;
+color:black;
+}
+section{
+margin: 0;
+position: top;
+z-index: 4;
+text-align: center;
+background-color: white;
+}
+.hamburguesa{
+display:grid;
+z-index: 5;
+margin-left: 20%;
+}
+header nav{
+position: fixed;
+top: 0;
+bottom: 0;
+left:-100%;
+width: 100%;
+z-index: 2;
+padding: 3em 1em 3em;
+background: red;
+transition: all 0.75s ease;
+overflow-y: auto;
+display:block;
+overflow:auto;
+}
+header nav a{
+color:black;
+}
+#menu_on{
+display: block;
+position: absolute;
+z-index: 2;
+margin-left:-3em;
+}
+.visible_menu nav{
+left: 0;
+opacity: 1;
+}
+.banner6{
+text-align:center;
+width:100%;
+display:grid;
+overflow:auto;
+padding:1em;
+}
+.grid{
+background-color: #969696;
+text-align: left;
+}
+.grid img{
+width: 80%;
+justify-items: center;
+align-items: center;
 }
 .grid a{
 color: black;
 text-decoration: none;
 }
-h4{
-font-size: 1.5rem;
-font-family:Red October;
-src: url(redoctober.ttf);
-}
 .form-consulta {
 max-width: 100%;
 margin:0 auto;
-padding:6em 0 6em 0; 
+padding:5%;
 color: black;
 }
 .campo-form {
@@ -51,6 +104,32 @@ border: none;
 background: #959595;
 color: black;
 }
+.grid2{
+width: 100%;
+padding:2em;
+text-align: center;
+}
+footer {
+display:block;
+overflow:auto;
+text-align:left;
+padding:2em;
+margin:0;
+background-color: black;
+}
+footer ul li{
+padding:0;
+margin:0;
+float:left;
+}
+footer a{
+padding:0;
+color: white;
+}
+.redes{
+display:grid;
+width:100%;
+}
 .grid4 img{
 width: 100%;
 padding:5%;
@@ -77,226 +156,18 @@ box-sizing: border-box;
 border:solid 10px;
 border-color: black;
 }
-section {
-margin: 0;
-position: top;
-z-index: 4;
-text-align: center;
-background-color: white;
-}
-.grid{
-background-color: #969696;
-text-align: left;
-}
-header nav{
-position: fixed;
-top: 0;
-bottom: 0;
-left:-100%;
-width: 100%;
-z-index: 2;
-padding: 3em 1em 3em;
-background: red;
-transition: all 0.75s ease;
-overflow-y: auto;
-display:block;
-overflow:auto;
-}
-header nav a{
-color:black;
-}
-#menu_on{
-display: block;
-position: absolute;
-z-index: 2;
-margin-left:-3em;
-}
-.visible_menu nav{
-left: 0;
-opacity: 1;
-}
-.hamburguesa{
-display:grid;
-z-index:8;
-margin-left: 20%;
-}
-.slider{
-padding: 10em 0 10em 0;
-}
-.slider img{
-width:100%;
-text-align:center;
-}
-.banner6{
-text-align:left;
-width:100%;
-display:block;
-overflow:auto;
-padding:1em;
-}
-.banner2 {
-text-align:left;
-width:100%;
-display:block;
-overflow:auto;
-padding:1em;
-}
-.bannerimg{
-text-align:center;
-}
-.bannerholi{
-padding-top: 4em; 
-width:60%; 
-margin:0 auto;
-text-align:center;
-}
-.banner2 img{
-width:100%;
-display:block;
-overflow:auto;
-text-align: left; 
-padding-top: 4em; 
-padding-bottom: 4em;
-}
-.banner2 h2{
-padding:0;
-}
-.banner3{
-padding:0;
-margin-left:-1.5em;
-margin-right:-1em;
-}
-.banner3 img{
-font-size:100%;
-width:100%;
-margin-right:0em;
-display:block;
-overflow:auto;
-text-align:center;
-}
-footer {
-display:block;
-overflow:auto;
-text-align:left;
-padding:0;
-margin:0;
-background-color: black;
-}
-footer p{
-padding:0;
-margin:0;
-color: white;
-}
-footer ul li{
-padding:0;
-margin:0;
-float:left;
-}
-.redes{
-display:block;
-overflow:auto;
-width:100%;
-float:left;
-list-style:none;
-margin:0;
-padding:0;
-}
-.intro{
-text-align:left;
-width:100%;
-padding:0;
-}
-.gracias{
-text-align:center;
-max-width:100%;
-}
-.gracias img{
-width:100%;
-padding: 8em 0em 6em 0em;
-}
-.trabajos{
-padding:0;
-margin-left:-1.5em;
-margin-right:-1em;
-}
-.trabajos img{
-width:100%;
-margin-right:0em;
-display:block;
-overflow:auto;
-text-align:center;
-}
-.trabajos video{
-width:100%;
-margin-right:0em;
-display:block;
-overflow:auto;
-text-align:center;
-animation-play-state:paused;
-}
-.banner5{
-display:none;
-}
-body{
-background-color: #969696;
-color:black;
-}
-footer{padding:2em;}
-.grid2{
-padding:2em;
-text-align: center;
-}
-.grid img{
-width: 80%;
-justify-items: center;
-align-items: center;
-}
-.form-consulta{
-padding:5%;
-}
-footer .redes ul li a{
-margin: 1em;
-}
-img{
-width:100%
-}
-.grid8{
-padding:5%;
-width: 100%;
-height:80%;
-}
 h2{
 font-size: 2rem;
 font-family:Red October;
 src: url(redoctober.ttf);
 margin:0;
 }
+h4{
+font-size: 1.5rem;
+font-family:Red October;
+src: url(redoctober.ttf);
+}
 @media (min-width: 60em){
-* {
-margin: 0;
-padding: 0;
-border: 0;
-box-sizing: border-box;
-line-height:120%;
-}
-.grid8{
-box-sizing: border-box; 
-border:solid 10px;
-margin-left:  20%;
-padding:2rem 4rem;
-width: 80%;
-height:80%;
-border-color: black;
-transform: translate(10px, 20px);
-}
-section{
-background-color: #969696;
-}
-body{
-background-color: #969696;
-color:black;
-padding: 0;
-}
 .grid{
 display: grid;
 width:80%;
@@ -339,11 +210,7 @@ display:none;
 display: none;
 }
 .banner6{
-text-align:center;
 width:80%;
-display:grid;
-overflow:auto;
-padding:1em;
 }
 .grid3{
 display:grid;
@@ -357,8 +224,6 @@ align-items: center;
 background-color: #969696;
 }
 .grid7{
-display:grid;
-justify-content: start;
 text-align:left;
 }
 img{
@@ -441,38 +306,9 @@ padding-top: 3em;
 .slider img{
 width: 80%;
 }
-.banner1{
-padding:0.5em 6em 0 6em;
-width: 100%;
-}
-.banner{
-width:100%;
-height: 100%;
-padding:5em;
-}
-.banner2{
-width:50%;
-margin:0 1em 0 1em;
-display:inline-block;
-overflow:auto;
-}
 section header .headerartista img{
 width:100%;
 z-index:2;
-}
-.banner2, img{
-width: 20%;
-text-align:left;
-}
-.banner3{
-width: 44%;
-margin:0 1em 0 1em;
-display:inline-block;
-overflow:auto;
-margin:1em;
-}
-.banner3, img{
-text-align:left;
 }
 .trabajos{
 padding: 0;
@@ -488,82 +324,40 @@ text-align:left;
 width:100%;
 padding:2em 0;
 }
-.banner3:hover{
-background: #ff00ff;
-}
 .form-consulta {
 margin-left:7em; 
 padding:1em 0 em 0; 
 display:grid; 
 overflow:auto;
 }
-.campo-form {
-width:100%; 
-height:2em; 
-margin:2px 0 6px; 
-box-sizing: border-box; 
-padding:0.5em 0 0 0.5em;
-color:black;
-}
-.banner4{
-padding-top: 6em;
-width:100%;
-display:inline-block;
-overflow:auto;
-}
-.bajadita{
-display:block;
-overflow:auto;
-width:45%;
-float:left;
-padding:0.5em 0.5em 0.5em 6em;
-}
 footer {
-display:block;
-overflow:auto;
 width:80%;
 margin-left:20%;
-text-align:left;
 padding: 0.5em;
 bottom:0;
 }
 .redes{
-display:block;
-overflow:auto;
 width:45%;
 float:right;
-padding:0.5em 0.5em 0.5em 7.3em ;
-list-style:none;
 }
 .redes ul li{
 padding:1em 2em 0 0;
 }
-.banner{
-text-align:center;
-display:block;
-overflow: auto;
-margin:0;
-background-color: #969696;
-}
 @media (min-width: 35em){
-*{
-padding:0;
-}
-nav a img{
-float:right;
-transform: rotate(-90deg);
-width: 5em;
-margin-right:-2em;
-z-index:2;
+.grid8{
+box-sizing: border-box; 
+border:solid 10px;
+margin-left:  20%;
+padding:5%;
+width: 80%;
+height:80%;
+border-color: black;
+transform: translate(10px, 20px);
 }
 .section header .headerartista img{
 width:100%;
 z-index:2;
 }
-    body{
-    background-color: #969696;
-    color:black;
-    }
     .logo img{
     width:20%;
     left: 0;
@@ -607,37 +401,11 @@ z-index:2;
     align-items: center;
     background-color: #969696;
     }
-    .grid2 img{
-    width: 100%;
-    }
-    .banner{
-    margin:0 auto;
-    width: 60%;
-    }
-    footer {
-    width:80%;
-    padding: 1em;
-    }
-    footer p{
-    padding: 1rem;
-    }
     .bajadita{
-    display:block;
-    overflow:auto;
+    display:grid;
     width:45%;
     float:left;
-    padding:0.5em 0.5em 0.5em 0.5em;
+    padding:0.5em;
     }
-    .redes{
-    display:block;
-    overflow:auto;
-    width:45%;
-    float:right;
-    padding:0.5em 0 0.5em 0;
-    }
-    .redes ul li {
-    padding-top:1em;
-    padding-right:1em;
-    }
-    }
+}
 }
