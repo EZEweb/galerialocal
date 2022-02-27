@@ -24,23 +24,6 @@ display:grid;
 z-index: 5;
 margin-left: 20%;
 }
-header nav{
-position: fixed;
-top: 0;
-bottom: 0;
-left:-100%;
-width: 100%;
-z-index: 2;
-padding: 3em 1em 3em;
-background: red;
-transition: all 0.75s ease;
-overflow-y: auto;
-display:block;
-overflow:auto;
-}
-header nav a{
-color:black;
-}
 #menu_on{
 display: block;
 position: absolute;
@@ -50,6 +33,12 @@ margin-left:-3em;
 .visible_menu nav{
 left: 0;
 opacity: 1;
+}
+.grid8{
+padding:5%;
+box-sizing: border-box; 
+border:solid 10px;
+border-color: black;
 }
 .banner6{
 text-align:center;
@@ -185,20 +174,65 @@ font-size: 1.2rem;
 font-family:Roboto;
 color: black; 
 }
+header nav{
+position: fixed;
+top: 0;
+bottom: 0;
+z-index: 2;
+left:-100%;
+padding: 3em 1em 3em;
+width: 100%;
+background: red;
+transition: all 0.75s ease;
+display:grid;
+}
+header nav a{
+color:black;
+}
+header nav ul li a{
+display: grid;
+}
+header nav ul li:hover{
+background: #969696;
+color: black;
+text-decoration:none;
+}
 @media (min-width: 60em){
+    header nav{
+        left:0;
+        height:100%;
+        padding:7% 0 1em 0;
+        width: 20%;
+        }
+        header nav ul li {
+        padding: 1em;
+        }
+.logo img{
+    width:20%;
+left: 0;
+top:0;
+padding:1em;
+position: fixed;
+z-index: 3;
+background-color: white;
+}
 .grid{
 width:80%;
 margin-left:20%;
 grid-template-columns: 42% 42%;
 grid-column-gap: 5%;
 }
+.grid8{
+width: 80%;
+height:80%;
+transform: translate(10px, 20px);
+}
 footer{
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 5%;
-    margin:0;
-    width:80%;
-    margin-left:20%;
-    }
+grid-template-columns: 45% 45%;
+grid-column-gap: 5%;
+width:80%;
+margin-left:20%;
+}
 .grid6{
 display: grid;
 width:80%;
@@ -257,24 +291,6 @@ grid-template-columns: 15% 15% 15% 15%;
 grid-column-gap: 5%;
 color: black;
 }
-header nav{
-display:grid;
-left:0;
-height:100%;
-padding:7% 0 1em 0;
-width: 20%;
-background: red;
-}
-header nav ul li {
-padding: 1em;
-display:grid;
-color:black;
-}
-header nav ul li:hover{
-background: #969696;
-color: black;
-text-decoration:none;
-}
 header nav a{
 display: none;
 }
@@ -283,34 +299,4 @@ margin-left:7em;
 }
 }
 @media (min-width: 35em){
-.grid8{
-box-sizing: border-box; 
-border:solid 10px;
-margin-left:20%;
-padding:5%;
-width: 80%;
-height:80%;
-border-color: black;
-transform: translate(10px, 20px);
-}
-.logo img{
-width:20%;
-left: 0;
-top:0;
-padding:1em;
-position: fixed;
-z-index: 3;
-background-color: white;
-}
-header nav{
-float: left;
-height:100%;
-display:block;
-transition: all 0.01s ease;
-}
-header nav ul li a{
-display: grid;
-color:black;
-text-decoration: none;
-}
 }
