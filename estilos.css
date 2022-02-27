@@ -15,6 +15,10 @@ z-index: 4;
 text-align: center;
 background-color: white;
 }
+.logo{
+display:grid;
+justify-content: center;
+}
 .hamburguesa{
 display:grid;
 z-index: 5;
@@ -55,8 +59,12 @@ overflow:auto;
 padding:1em;
 }
 .grid{
+display:grid;
 background-color: #969696;
 text-align: left;
+grid-column-gap: 5%;
+justify-items: center;
+align-items: center;
 }
 .grid img{
 width: 80%;
@@ -67,11 +75,10 @@ align-items: center;
 color: black;
 text-decoration: none;
 }
-.form-consulta {
-max-width: 100%;
-margin:0 auto;
+.form-consulta{
+display:grid;
+justify-content: center;
 padding:5%;
-color: black;
 }
 .campo-form {
 width:100%;
@@ -88,7 +95,7 @@ label span {
 color: #00ff00
 }
 textarea {
-min-height: 10em !important;
+min-height: 10em;
 }
 .btn-form {
 display: grid; 
@@ -100,7 +107,7 @@ color:#fff;
 text-transform: uppercase;
 border: none;
 }
-.btn-form:hover {
+.btn-form:hover{
 background: #959595;
 color: black;
 }
@@ -109,12 +116,11 @@ width: 100%;
 padding:2em;
 text-align: center;
 }
-footer {
-display:block;
-overflow:auto;
+footer{
+display:grid;
 text-align:left;
 padding:2em;
-margin:0;
+bottom:0;
 background-color: black;
 }
 footer ul li{
@@ -130,23 +136,23 @@ color: white;
 display:grid;
 width:100%;
 }
+.redes ul li{
+padding:1em 1em 0 0;
+}
 .grid4 img{
 width: 100%;
 padding:5%;
 }
-.grid5{
-padding: 0 5%;
-}
 .grid5 img{
 width: 100%;
-padding: 5% 20%;
-}
-.grid6 img{
-width: 100%;
+padding: 15%;
 }
 .grid6{
 padding:5%;
 top:0;
+}
+.grid6 img{
+width: 100%;
 }
 .grid6 h5{
 background-color:white;
@@ -156,36 +162,7 @@ box-sizing: border-box;
 border:solid 10px;
 border-color: black;
 }
-h2{
-font-size: 2rem;
-font-family:Red October;
-src: url(redoctober.ttf);
-margin:0;
-}
-h4{
-font-size: 1.5rem;
-font-family:Red October;
-src: url(redoctober.ttf);
-}
-@media (min-width: 60em){
-.grid{
-display: grid;
-width:80%;
-margin-left:20%;
-grid-template-columns: 42% 42%;
-grid-column-gap: 5%;
-background-color: #969696;
-}
-.grid6{
-display: grid;
-width:80%;
-margin-left:20%;
-grid-template-columns: 40% 40%;
-grid-column-gap: 5%;
-padding: 6% 0 10% 10%;
-position:absolute;
-}
-.grid6 img{
+section header .headerartista img{
 width: 100%;
 }
 h1{
@@ -193,7 +170,12 @@ font-size: 3rem;
 font-family:Red October;
 color: black;
 }
-h3{
+h2{
+font-size: 1.8rem;
+font-family:Red October;
+src: url(redoctober.ttf);
+}
+h4{
 font-size: 1.5rem;
 font-family: roboto;
 color: black;
@@ -202,6 +184,29 @@ h5{
 font-size: 1.2rem;
 font-family:Roboto;
 color: black; 
+}
+@media (min-width: 60em){
+.grid{
+width:80%;
+margin-left:20%;
+grid-template-columns: 42% 42%;
+grid-column-gap: 5%;
+}
+footer{
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 5%;
+    margin:0;
+    width:80%;
+    margin-left:20%;
+    }
+.grid6{
+display: grid;
+width:80%;
+margin-left:20%;
+grid-template-columns: 40% 40%;
+grid-column-gap: 5%;
+padding: 6% 0 10% 10%;
+position:absolute;
 }
 .hamburguesa{
 display:none;
@@ -242,23 +247,15 @@ grid-column-gap: 1%;
 padding-top: 4em;
 color: black;
 }
-.grid4 img{
-width: 80%;
-}
 .grid5{
 width:80%;
 margin-left:20%;
 justify-content: center;
-padding: 0 5% auto;
 display:grid;
 background-color: #969696;
 grid-template-columns: 15% 15% 15% 15%;
 grid-column-gap: 5%;
 color: black;
-}
-.grid5 img{
-width: 100%;
-padding:10%;
 }
 header nav{
 display:grid;
@@ -276,136 +273,44 @@ color:black;
 header nav ul li:hover{
 background: #969696;
 color: black;
-text-decoration: none;
+text-decoration:none;
 }
 header nav a{
 display: none;
 }
-.logo{
-display:grid;
-justify-content: center;
-width: 20%;
-}
-.gracias{
-text-align:center;
-max-width:50%;
-}
-.gracias img{
-width:100%;
-padding: 8em 0em 6em 0em;
-}
-.slider{
-text-align:left;
-padding:5em 15em 5em 15em;
-}
-.slider h1{
-text-align: center;
-padding-bottom: 3em;
-padding-top: 3em;
-}
-.slider img{
-width: 80%;
-}
-section header .headerartista img{
-width:100%;
-z-index:2;
-}
-.trabajos{
-padding: 0;
-margin:0 auto;
-width:40%;
-}
-.trabajos img{
-width:100%;
-padding:1em 0;
-}
-.intro{
-text-align:left;
-width:100%;
-padding:2em 0;
-}
 .form-consulta {
-margin-left:7em; 
-padding:1em 0 em 0; 
-display:grid; 
-overflow:auto;
+margin-left:7em;
 }
-footer {
-width:80%;
-margin-left:20%;
-padding: 0.5em;
-bottom:0;
-}
-.redes{
-width:45%;
-float:right;
-}
-.redes ul li{
-padding:1em 2em 0 0;
 }
 @media (min-width: 35em){
 .grid8{
 box-sizing: border-box; 
 border:solid 10px;
-margin-left:  20%;
+margin-left:20%;
 padding:5%;
 width: 80%;
 height:80%;
 border-color: black;
 transform: translate(10px, 20px);
 }
-.section header .headerartista img{
-width:100%;
-z-index:2;
+.logo img{
+width:20%;
+left: 0;
+top:0;
+padding:1em;
+position: fixed;
+z-index: 3;
+background-color: white;
 }
-    .logo img{
-    width:20%;
-    left: 0;
-    top:0;
-    padding:1em;
-    position: fixed;
-    z-index: 3;
-    background-color: white;
-    }
-    header nav{
-    float: left;
-    height:100%;
-    display:block;
-    transition: all 0.01s ease;
-    }
-    header nav ul li a{
-    display: grid;
-    color:black;
-    text-decoration: none;
-    }
-    .grid4{
-    display:grid;
-    width:80%;
-    margin-left:20%;
-    background-color: #969696;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 5%;
-    padding-top: 4em;
-    }
-    .grid4 img{
-    width: 100%;
-    padding:5%;
-    }
-    .grid4 h4{
-    grid-template-columns: 100%;
-    }
-    .grid{
-    display: grid;
-    grid-column-gap: 5%;
-    justify-items: center;
-    align-items: center;
-    background-color: #969696;
-    }
-    .bajadita{
-    display:grid;
-    width:45%;
-    float:left;
-    padding:0.5em;
-    }
+header nav{
+float: left;
+height:100%;
+display:block;
+transition: all 0.01s ease;
+}
+header nav ul li a{
+display: grid;
+color:black;
+text-decoration: none;
 }
 }
