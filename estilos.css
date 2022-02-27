@@ -197,6 +197,13 @@ background: #969696;
 color: black;
 text-decoration:none;
 }
+.ir-arriba{
+display:none;
+position:fixed;
+bottom:5%;
+right:5%;
+z-index:6;
+}
 @media (min-width: 60em){
     header nav{
         left:0;
