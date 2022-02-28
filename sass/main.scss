@@ -30,3 +30,60 @@ header nav{
             color:black;
         }
 }
+.grid{
+    display:grid;
+    background-color: #969696;
+    text-align: left;
+    grid-column-gap: 5%;
+    justify-items: center;
+    align-items: center;
+        .grid img{
+            width: 80%;
+            justify-items: center;
+            align-items: center;
+        }
+        .grid a{
+            color: black;
+            text-decoration: none;
+        }
+}
+.grid6{
+    padding:5%;
+    top:0;
+        .grid6 img{
+            width: 100%;
+        }
+        .grid6 h5{
+        background-color:white;
+        padding:5%;
+        margin:0;
+        box-sizing: border-box; 
+        border:solid 10px;
+        border-color: black;
+        }
+}
+footer{
+    display:grid;
+    text-align:left;
+    padding:2em;
+    bottom:0;
+    background-color: black;
+        footer ul li{
+            padding:0;
+            margin:0;
+            float:left;
+        }
+        footer a{
+        padding:0;
+        color: white;
+        }
+}
+.logo img{
+    width:20%;
+    left: 0;
+    top:0;
+    padding:1em;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+}
