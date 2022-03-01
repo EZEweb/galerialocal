@@ -1,6 +1,6 @@
 *{
 font-family: Roboto;
-src: url(Roboto.ttf);
+src: url(font/Roboto-Regular.ttf);
 padding:0;
 list-style:none;
 }
@@ -158,12 +158,13 @@ border-color: black;
 h1{
 font-size: 3rem;
 font-family:Red October;
+src: url(font/RedOctober.ttf);
 color: black;
 }
 h2{
 font-size: 1.8rem;
 font-family:Red October;
-src: url(redoctober.ttf);
+src: url(font/redoctober.ttf);
 }
 h4{
 font-size: 1.5rem;
