@@ -72,6 +72,20 @@ section header ul ul li:hover {
   text-decoration: none;
 }
 
+.headerartista img {
+  width: 100%;
+}
+
+.grid9 {
+  -webkit-transform: skewY(25deg);
+          transform: skewY(25deg);
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: -30%;
+}
+
 .grid3 {
   display: -ms-grid;
   display: grid;
@@ -85,17 +99,18 @@ section header ul ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #969696;
 }
 
 .grid3 .grid8 {
-  width: 80%;
+  width: 120%;
+  margin-left: 40%;
   padding: 5%;
   text-align: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 10px;
-  border-color: black;
+  z-index: 2;
+}
+
+.grid3 .grid8 h5 {
+  width: 80%;
 }
 
 .grid3 .banner6 {
@@ -197,12 +212,30 @@ section header ul ul li:hover {
 }
 
 .grid6 {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  margin-left: 20%;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+  grid-column-gap: 2%;
+  position: absolute;
   padding: 5%;
   top: 0;
 }
 
 .grid6 img {
   width: 100%;
+}
+
+.grid6 h5 {
+  background-color: white;
+  padding: 5%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 10px;
+  border-color: black;
 }
 
 footer {
@@ -236,18 +269,25 @@ footer .redes {
 }
 
 footer .redes .redes ul li {
-  padding: 1em 1em 0 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 10rem;
   font-family: Red October;
   src: url(font/redoctober.ttf);
-  color: black;
+  color: red;
+  text-shadow: 0.5rem 0.5rem  black;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
+  font-family: Red October;
+  src: url(font/redoctober.ttf);
+}
+
+h3 {
+  font-size: 2rem;
   font-family: Red October;
   src: url(font/redoctober.ttf);
 }
@@ -294,7 +334,6 @@ h5 {
 }
 
 .grid4 .grid6 h5 {
-  background-color: white;
   padding: 5%;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -310,5 +349,13 @@ h5 {
 
 .grid4 h1 {
   margin: 5%;
+}
+
+.ir-arriba {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 6;
 }
 /*# sourceMappingURL=main.css.map */
