@@ -1,0 +1,21 @@
+.grid6{
+    display: grid;
+    width:80%;
+    margin-left:20%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 2%;
+    position:absolute;
+    padding:5%;
+    top:0;
+    img{
+        width: 100%;
+    }
+    h5{
+        background-color:white;
+        padding:5%;
+        margin:0;
+        box-sizing: border-box; 
+        border:solid 10px;
+        border-color: black;
+    }      
+}

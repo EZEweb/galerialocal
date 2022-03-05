@@ -1,0 +1,44 @@
+section{
+    position: top;
+    width:20%;
+    z-index: 4;
+    text-align: center;
+    background-color: white; 
+    header{
+        .logo img{
+            width: 20%;
+            left: 0;
+            top:0;
+            padding:1em;
+            position: fixed;
+            z-index: 3;
+            background-color: white;
+        }
+        nav{
+            display:grid;
+            position: fixed;
+            left:0;
+            top: 0;
+            bottom: 0;
+            padding:0;
+            z-index: 2;
+            width: 20%;
+            background: red;
+            transition: all 0.75s ease;
+            }
+            ul{
+                padding:0;
+                li a{
+                    display: grid;
+                    padding: 1em 0;
+                    text-decoration:none;
+                    color:black;
+                    &:hover{
+                    background: #969696;
+                    color: black;
+                    text-decoration:none;
+                }
+                }
+            }
+    }
+}
