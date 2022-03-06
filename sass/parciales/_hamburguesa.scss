@@ -1,20 +1,6 @@
 .hamburguesa{
-    display:grid;
-    z-index: 5;
-    margin-left: 20%;
-    z-index: 99;
-    }
-    #menu_on{
-        display: block;
-        position: absolute;
-        z-index: 2;
-        margin: 5% 0 0 5%;
-        }
-        .visible_menu nav{
-        left: 0;
-        opacity: 1;
-        }
-        .invisible_menu nav{
-        left: -100%;
-        opacity: 1;
-        }
+    display:none;
+}
+#menu_on{
+    display: inline;
+}
