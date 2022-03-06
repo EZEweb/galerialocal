@@ -2,6 +2,11 @@
   list-style: none;
 }
 
+body {
+  background-color: #969696;
+  color: black;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -105,6 +110,7 @@ section header nav {
 }
 
 section header ul {
+  margin-top: 30%;
   padding: 0;
 }
 
@@ -126,7 +132,7 @@ section header ul li a:hover {
   display: -ms-grid;
   display: grid;
   width: 80%;
-  margin-left: 20%;
+  margin: -20% 0 0 20%;
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
   grid-column-gap: 1%;
@@ -135,14 +141,7 @@ section header ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.grid3 .grid8 {
-  width: 120%;
-  margin-left: 40%;
-  padding: 5%;
-  text-align: left;
-  z-index: 2;
+  background-color: #969696;
 }
 
 .grid3 .banner6 {
@@ -158,7 +157,7 @@ section header ul li a:hover {
   display: -ms-grid;
   display: grid;
   width: 80%;
-  margin-top: 15%;
+  margin-top: 20%;
   margin-left: 20%;
   text-align: center;
   -webkit-box-pack: center;
@@ -246,6 +245,7 @@ section header ul li a:hover {
           box-sizing: border-box;
   border: solid 10px;
   border-color: black;
+  text-align: left;
 }
 
 .grid9 {
@@ -256,6 +256,7 @@ section header ul li a:hover {
   width: 100%;
   height: 100%;
   margin-top: -30%;
+  z-index: 0;
 }
 
 footer {
@@ -302,6 +303,9 @@ footer .redes .redes ul li {
 
 .headerartista img {
   width: 100%;
+  top: 0;
+  margin: 0;
+  position: absolute;
 }
 
 h1 {
@@ -329,6 +333,20 @@ h5 {
   color: black;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("font/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Red October';
+  src: url("font/redoctober.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 @media (min-width: 60em) {
   .logo img {
     width: 20%;
@@ -343,45 +361,13 @@ h5 {
     display: none;
   }
   #menu_on {
-    display: none;
+    display: inline;
   }
   .banner6 {
     width: 80%;
   }
-  .grid3 {
-    display: -ms-grid;
-    display: grid;
-    width: 80%;
-    margin-left: 20%;
-    -ms-grid-columns: 48% 48%;
-        grid-template-columns: 48% 48%;
-    grid-column-gap: 1%;
-    text-align: center;
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #969696;
-  }
   img {
     width: 100%;
-  }
-  .grid4 {
-    display: -ms-grid;
-    display: grid;
-    width: 80%;
-    margin-top: 15%;
-    margin-left: 20%;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #969696;
-    -ms-grid-columns: 48% 48%;
-        grid-template-columns: 48% 48%;
-    grid-column-gap: 1%;
-    padding-top: 4em;
-    color: black;
   }
   .grid5 {
     width: 80%;
@@ -403,6 +389,17 @@ h5 {
 }
 
 @media (max-width: 35em) {
+  section header nav {
+    left: -100%;
+  }
+  section header .logo img {
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 1em;
+    position: absolute;
+    background-color: white;
+  }
   .grid {
     width: 100%;
     margin-left: 0;
@@ -413,11 +410,25 @@ h5 {
     width: 100%;
     margin: 0;
   }
+  .grid3 {
+    width: 100%;
+    margin: 20% 0 0 0;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    text-align: left;
+  }
+  .grid3 .grid8 h1 {
+    width: 80%;
+    font-size: 8rem;
+    margin-left: 0;
+  }
   .grid9 {
     display: none;
   }
-  .grid8 {
-    margin: 0;
+  header nav {
+    left: -100%;
+    padding: 3em 1em 3em;
+    width: 100%;
   }
   .grid6 {
     width: 100%;
@@ -434,35 +445,30 @@ h5 {
     padding: 3em 1em 3em;
     width: 100%;
   }
-  .grid8 {
-    width: 100%;
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
   footer {
     width: 100%;
     margin: 0;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+  .grid4 {
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin: 0;
+  }
+  .grid8 {
+    z-index: 99;
+  }
 }
 
-body {
-  background-color: #969696;
-  color: black;
+.grid8 {
+  z-index: 99;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url("font/Roboto-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Red October';
-  src: url("font/redoctober.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+.grid8 h1 {
+  font-size: 10rem;
+  text-align: left;
+  margin-left: 20%;
 }
 /*# sourceMappingURL=main.css.map */

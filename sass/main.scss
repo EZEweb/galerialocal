@@ -1,6 +1,4 @@
-*{
-    list-style:none;
-}
+@import "./parciales/h";
 @import "./parciales/body";
 @import"./parciales/grid";
 @import "./parciales/section";
@@ -12,18 +10,6 @@
 @import "./parciales/footer";
 @import "./parciales/ir-arriba";
 @import "./parciales/headerartista";
-@import "./parciales/h";
+@import "./parciales/grid8";
+@import "./parciales/hamburguesa";
 @import "./parciales/responsive";
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('font/Roboto-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Red October';
-    src: url('font/redoctober.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
