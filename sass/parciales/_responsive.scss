@@ -14,32 +14,22 @@
     img{
         width:100%
     }
-    .grid5{
-        width:80%;
-        margin-left:20%;
-        justify-content: center;
-        display:grid;
-        background-color: #969696;
-        grid-template-columns: 15% 15% 15% 15%;
-        grid-column-gap: 5%;
-        color: black;
-    }
+
     header nav a{
         display: none;
     }
 }
+@media (max-width: 35em){
 .hamburguesa{
     display:grid;
     z-index: 99;
-    }
+}
 #menu_on{
-    display: block;
     position: absolute;
     z-index: 4;
     margin: -15% 0 0 3%;
 }
-#menu_off img{
-    display: block;
+#menu_off{
     position: absolute;
     z-index: 4;
     margin: 10% 0 0 3%;
@@ -52,7 +42,6 @@
     left: -100%;
     opacity: 1;
 }
-@media (max-width: 35em){
 section header nav{
     left: -100%;
     width: 100%;
@@ -65,6 +54,11 @@ section header .logo img{
     padding:1em 2em 1em 2em;
     position: absolute;
     background-color: white;
+}
+.headerartista img{
+    width: 100%;
+    left: 0;
+    top:19%;
 }
 .grid{        
     width:100%;
@@ -91,19 +85,17 @@ section header .logo img{
     display:none;
 }
 .grid6{
-    width:100%;
-    margin-left:0;
+    width:80%;
+    margin-top:25%;
+    margin-left: 0;
+    margin-right: 0;
     grid-template-columns: 100%;
     position:relative;
+    justify-content: center;
+    padding:0;
     img{
         width: 100%;
 }
-}
-header nav{
-    left:-100%;
-    padding: 3em 1em 3em;
-    width: 100%;
-    z-index: 5;
 }
 footer{
     width: 100%;
@@ -114,5 +106,13 @@ footer{
     width: 100%;
     grid-template-columns: 100%;
     margin:0;
+}
+.grid5{
+    width: 100%;
+    grid-template-columns: 100%;
+    margin:0;
+    h4{
+        padding: 5%;
+    }
 }
 }

@@ -118,6 +118,7 @@ body {
 section {
   position: top;
   width: 20%;
+  height: 0;
   z-index: 4;
   text-align: center;
   background-color: white;
@@ -362,7 +363,7 @@ footer .redes .redes ul li {
 }
 
 #menu_on {
-  display: inline;
+  display: block;
 }
 
 @media (min-width: 60em) {
@@ -381,56 +382,35 @@ footer .redes .redes ul li {
   img {
     width: 100%;
   }
-  .grid5 {
-    width: 80%;
-    margin-left: 20%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -ms-grid;
-    display: grid;
-    background-color: #969696;
-    -ms-grid-columns: 15% 15% 15% 15%;
-        grid-template-columns: 15% 15% 15% 15%;
-    grid-column-gap: 5%;
-    color: black;
-  }
   header nav a {
     display: none;
   }
 }
 
-.hamburguesa {
-  display: -ms-grid;
-  display: grid;
-  z-index: 99;
-}
-
-#menu_on {
-  display: block;
-  position: absolute;
-  z-index: 4;
-  margin: -15% 0 0 3%;
-}
-
-#menu_off img {
-  display: block;
-  position: absolute;
-  z-index: 4;
-  margin: 10% 0 0 3%;
-}
-
-.visible_menu nav {
-  left: 0;
-  opacity: 1;
-}
-
-.invisible_menu nav {
-  left: -100%;
-  opacity: 1;
-}
-
 @media (max-width: 35em) {
+  .hamburguesa {
+    display: -ms-grid;
+    display: grid;
+    z-index: 99;
+  }
+  #menu_on {
+    position: absolute;
+    z-index: 4;
+    margin: -15% 0 0 3%;
+  }
+  #menu_off {
+    position: absolute;
+    z-index: 4;
+    margin: 10% 0 0 3%;
+  }
+  .visible_menu nav {
+    left: 0;
+    opacity: 1;
+  }
+  .invisible_menu nav {
+    left: -100%;
+    opacity: 1;
+  }
   section header nav {
     left: -100%;
     width: 100%;
@@ -443,6 +423,11 @@ footer .redes .redes ul li {
     padding: 1em 2em 1em 2em;
     position: absolute;
     background-color: white;
+  }
+  .headerartista img {
+    width: 100%;
+    left: 0;
+    top: 19%;
   }
   .grid {
     width: 100%;
@@ -471,20 +456,20 @@ footer .redes .redes ul li {
     display: none;
   }
   .grid6 {
-    width: 100%;
+    width: 80%;
+    margin-top: 25%;
     margin-left: 0;
+    margin-right: 0;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
   }
   .grid6 img {
     width: 100%;
-  }
-  header nav {
-    left: -100%;
-    padding: 3em 1em 3em;
-    width: 100%;
-    z-index: 5;
   }
   footer {
     width: 100%;
@@ -497,6 +482,15 @@ footer .redes .redes ul li {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     margin: 0;
+  }
+  .grid5 {
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin: 0;
+  }
+  .grid5 h4 {
+    padding: 5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
