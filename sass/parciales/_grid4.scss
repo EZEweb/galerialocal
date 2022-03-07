@@ -8,7 +8,7 @@
     background-color: #969696;
     grid-template-columns: 48% 48%;
     grid-column-gap: 1%;
-    color: black;
+    color: $back-negro;
     .grid6{
         display: grid;
         width:80%;
@@ -22,7 +22,7 @@
             margin:0;
             box-sizing: border-box; 
             border:solid 10px;
-            border-color: black;
+            border-color: $back-negro;
         }
     }
     img{

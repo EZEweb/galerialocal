@@ -1,17 +1,11 @@
 .grid{
-    display:grid;
-    background-color: #969696;
-    width:80%;
-    margin-left:20%;
-    grid-template-columns: 48% 48%;
-    grid-column-gap: 1%;
-    text-align: left;
-    justify-items: center;
-    align-items: center;
+    @extend doscolumnas;
+    background-color: $back-gris;
     .form-consulta{
+        text-align: left;
         display:grid;
         justify-content: center;
-        width:80%;
+        width:100%;
         padding:5%;
         .campo-form{
             width:100%;
@@ -19,14 +13,14 @@
             margin:2px 0 6px;
             box-sizing: border-box;
             padding:0.5em 0 0 0.5em;
-            color:black;
+            color:$back-negro;
         }
         textarea {
             min-height: 10em;
         }
         .btn-form {
             display: grid; 
-            background: red; 
+            background: $back-red; 
             height: 4em;
             width:50%;
             padding: 0 20px; 
@@ -35,7 +29,7 @@
             border: none;
         }
         .btn-form:hover{
-            background: black;
+            background: $back-negro;
         }
     }
     img{
@@ -44,7 +38,7 @@
         align-items: center;
     }
     a{
-        color: black;
+        color: $back-negro;
         text-decoration: none;
     }
 }

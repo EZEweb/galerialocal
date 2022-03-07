@@ -1,8 +1,11 @@
+$back-red: #ff0000;
+$back-gris: #969696;
+$back-negro: #000000;
 h1{
     font-size: 10rem;
     font-family:Red October;
     src: url(font/redoctober.ttf);
-    color: red;
+    color: $back-red;
 }
 h3{
     font-size: 1.8rem;
@@ -12,12 +15,12 @@ h3{
 h4{
     font-size: 1.5rem;
     font-family: roboto;
-    color: black;
+    color: $back-negro;
 }
 h5{
     font-size: 1.2rem;
     font-family:Roboto;
-    color: black; 
+    color: $back-negro; 
 }
 @font-face {
     font-family: 'Roboto';

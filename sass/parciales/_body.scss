@@ -2,6 +2,16 @@
     list-style:none;
 }
 body{
-    background-color: #969696;
-    color:black;
+    background-color: $back-gris;
+    color:$back-negro;
+}
+@mixin doscolumnas{
+    display:grid;
+    width:80%;
+    margin:0 0 0 20%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 1%;
+    text-align:center;
+    justify-items: center;
+    align-items: center;    
 }
