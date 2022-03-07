@@ -128,7 +128,7 @@ section header .logo img {
   width: 20%;
   left: 0;
   top: 0;
-  padding: 1em;
+  padding: 1em 2em 1em 2em;
   position: fixed;
   z-index: 3;
   background-color: white;
@@ -299,6 +299,12 @@ section header ul li a:hover {
   z-index: 0;
 }
 
+.grid404 img {
+  width: 80%;
+  margin-left: 20%;
+  padding: 5%;
+}
+
 footer {
   display: -ms-grid;
   display: grid;
@@ -418,9 +424,6 @@ footer .redes .redes ul li {
   }
   section header .logo img {
     width: 100%;
-    left: 0;
-    top: 0;
-    padding: 1em 2em 1em 2em;
     position: absolute;
     background-color: white;
   }
@@ -491,6 +494,11 @@ footer .redes .redes ul li {
   }
   .grid5 h4 {
     padding: 5%;
+  }
+  .grid404 img {
+    width: 100%;
+    margin-left: 0%;
+    padding: 40% 0 20% 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

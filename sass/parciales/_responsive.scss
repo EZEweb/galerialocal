@@ -49,9 +49,6 @@ section header nav{
 }
 section header .logo img{
     width: 100%;
-    left: 0;
-    top:0;
-    padding:1em 2em 1em 2em;
     position: absolute;
     background-color: white;
 }
@@ -114,5 +111,10 @@ footer{
     h4{
         padding: 5%;
     }
+}
+.grid404 img{
+    width: 100%;
+    margin-left: 0%;
+    padding: 40% 0 20% 0;
 }
 }
