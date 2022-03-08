@@ -49,8 +49,8 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  width: 80%;
-  margin: 0 0 0 20%;
+  width: 85%;
+  margin: 0 0 0 15%;
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
   grid-column-gap: 1%;
@@ -63,12 +63,13 @@ body {
 }
 
 .grid .form-consulta {
+  text-align: left;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 85%;
   padding: 5%;
 }
 
@@ -117,15 +118,21 @@ body {
 
 section {
   position: top;
-  width: 20%;
+  width: 15%;
   height: 0;
   z-index: 4;
   text-align: center;
   background-color: white;
 }
 
+section header .logo {
+  height: 20%;
+}
+
 section header .logo img {
-  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  width: 15%;
   left: 0;
   top: 0;
   padding: 1em 2em 1em 2em;
@@ -143,7 +150,7 @@ section header nav {
   bottom: 0;
   padding: 0;
   z-index: 2;
-  width: 20%;
+  width: 15%;
   background: red;
   -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
@@ -157,7 +164,7 @@ section header ul {
 section header ul li a {
   display: -ms-grid;
   display: grid;
-  padding: 1em 0;
+  padding: 1em;
   text-decoration: none;
   color: black;
 }
@@ -171,11 +178,11 @@ section header ul li a:hover {
 .grid3 {
   display: -ms-grid;
   display: grid;
-  width: 80%;
-  margin: 0 0 0 20%;
+  width: 85%;
+  margin: 0 0 0 15%;
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
   text-align: center;
   justify-items: center;
   -webkit-box-align: center;
@@ -196,17 +203,17 @@ section header ul li a:hover {
 .grid4 {
   display: -ms-grid;
   display: grid;
-  width: 80%;
+  width: 85%;
   margin-top: 40%;
-  margin-left: 20%;
+  margin-left: 15%;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #969696;
-  -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
-  grid-column-gap: 1%;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  grid-column-gap: 5%;
   color: #000000;
 }
 
@@ -222,18 +229,9 @@ section header ul li a:hover {
   position: absolute;
 }
 
-.grid4 .grid6 h5 {
-  padding: 5%;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 10px;
-  border-color: #000000;
-}
-
 .grid4 img {
-  width: 80%;
-  padding: 5%;
+  width: 100%;
+  padding: 5% 0 5% 0;
 }
 
 .grid4 h1 {
@@ -241,17 +239,17 @@ section header ul li a:hover {
 }
 
 .grid5 {
-  width: 80%;
-  margin-left: 20%;
+  display: -ms-grid;
+  display: grid;
+  width: 85%;
+  margin-left: 15%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -ms-grid;
-  display: grid;
   background-color: #969696;
-  -ms-grid-columns: 15% 15% 15% 15%;
-      grid-template-columns: 15% 15% 15% 15%;
-  grid-column-gap: 5%;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 2%;
   color: #000000;
 }
 
@@ -263,14 +261,14 @@ section header ul li a:hover {
 .grid6 {
   display: -ms-grid;
   display: grid;
-  width: 80%;
-  margin-left: 20%;
-  -ms-grid-columns: 48% 48%;
-      grid-template-columns: 48% 48%;
+  width: 85%;
+  margin-left: 15%;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
   grid-column-gap: 2%;
   position: absolute;
   padding: 5%;
-  top: 0;
+  margin-top: 10%;
 }
 
 .grid6 img {
@@ -283,7 +281,7 @@ section header ul li a:hover {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: solid 10px;
+  border: solid 5px;
   border-color: #000000;
   text-align: left;
 }
@@ -300,8 +298,8 @@ section header ul li a:hover {
 }
 
 .grid404 img {
-  width: 80%;
-  margin-left: 20%;
+  width: 85%;
+  margin-left: 15%;
   padding: 5%;
 }
 
@@ -311,8 +309,8 @@ footer {
   -ms-grid-columns: 48% 48%;
       grid-template-columns: 48% 48%;
   grid-column-gap: 1%;
-  width: 80%;
-  margin-left: 20%;
+  width: 85%;
+  margin-left: 15%;
   text-align: left;
   padding: 2em;
   bottom: 0;
@@ -347,11 +345,20 @@ footer .redes .redes ul li {
   z-index: 6;
 }
 
+.headerartista {
+  display: -ms-grid;
+  display: grid;
+}
+
 .headerartista img {
   width: 100%;
   top: 0;
   margin: 0;
   position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 5px;
+  border-color: #000000;
 }
 
 .grid8 {
@@ -373,15 +380,6 @@ footer .redes .redes ul li {
 }
 
 @media (min-width: 60em) {
-  .logo img {
-    width: 20%;
-    left: 0;
-    top: 0;
-    padding: 1em;
-    position: fixed;
-    z-index: 3;
-    background-color: white;
-  }
   .banner6 {
     width: 80%;
   }
@@ -398,15 +396,16 @@ footer .redes .redes ul li {
     display: -ms-grid;
     display: grid;
     z-index: 99;
+    position: absolute;
   }
   #menu_on {
     position: absolute;
-    z-index: 4;
-    margin: -15% 0 0 3%;
+    z-index: 44;
+    margin: 10% 0 0 3%;
   }
   #menu_off {
     position: absolute;
-    z-index: 4;
+    z-index: 44;
     margin: 10% 0 0 3%;
   }
   .visible_menu nav {
@@ -424,36 +423,40 @@ footer .redes .redes ul li {
   }
   section header .logo img {
     width: 100%;
+    height: 20%;
     position: absolute;
+  }
+  .headerartista {
+    height: 20%;
   }
   .headerartista img {
     width: 100%;
-    left: 0;
-    top: 19%;
+    top: 20%;
   }
-  .form-consulta {
+  .grid .form-consulta {
     width: 100%;
   }
   .grid3 {
+    display: -ms-grid;
+    display: grid;
     width: 100%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    margin: 0;
-    margin-top: 25%;
-    text-align: left;
-    z-index: 2;
+    margin-left: 0;
+    padding-top: 25%;
   }
   .grid3 .grid8 h1 {
     width: 80%;
-    font-size: 8rem;
+    font-size: 10rem;
+    padding: 5%;
     margin-left: 0;
   }
   .grid9 {
     display: none;
   }
   .grid6 {
-    width: 80%;
-    margin-top: 25%;
+    width: 100%;
+    margin-top: 35%;
     margin-left: 0;
     margin-right: 0;
     -ms-grid-columns: 100%;
@@ -462,7 +465,7 @@ footer .redes .redes ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0;
+    padding: 5%;
   }
   .grid6 img {
     width: 100%;
