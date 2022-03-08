@@ -1,11 +1,11 @@
 .grid5{
-    width:80%;
-    margin-left:20%;
+    display: grid;
+    width:85%;
+    margin-left:15%;
     justify-content: center;
-    display:grid;
     background-color: #969696;
-    grid-template-columns: 15% 15% 15% 15%;
-    grid-column-gap: 5%;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 2%;
     color: $back-negro;
     img{
         width: 100%;

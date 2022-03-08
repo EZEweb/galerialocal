@@ -1,11 +1,18 @@
 .grid{
-    @extend doscolumnas;
+    display:grid;
+    width:85%;
+    margin:0 0 0 15%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 1%;
+    text-align:center;
+    justify-items: center;
+    align-items: center; 
     background-color: $back-gris;
     .form-consulta{
         text-align: left;
         display:grid;
         justify-content: center;
-        width:100%;
+        width:85%;
         padding:5%;
         .campo-form{
             width:100%;

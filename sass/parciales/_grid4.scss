@@ -1,13 +1,13 @@
 .grid4{
     display:grid;
-    width:80%;
+    width:85%;
     margin-top:40%;
-    margin-left:20%;
+    margin-left:15%;
     text-align:center;
     justify-content: center;
     background-color: #969696;
-    grid-template-columns: 48% 48%;
-    grid-column-gap: 1%;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 5%;
     color: $back-negro;
     .grid6{
         display: grid;
@@ -17,17 +17,10 @@
         grid-column-gap: 2%;
         padding: 6% 0 10% 10%;
         position:absolute;
-        h5{
-            padding:5%;
-            margin:0;
-            box-sizing: border-box; 
-            border:solid 10px;
-            border-color: $back-negro;
-        }
     }
     img{
-        width: 80%;
-        padding:5%;
+        width: 100%;
+        padding:5% 0 5% 0;
     }
     h1{
         margin:5%;
