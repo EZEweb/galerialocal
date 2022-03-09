@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("font/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Red October';
+  src: url("font/redoctober.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 h1 {
   font-size: 10rem;
   font-family: Red October;
@@ -21,20 +35,6 @@ h5 {
   font-size: 1.2rem;
   font-family: Roboto;
   color: #000000;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("font/Roboto-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Red October';
-  src: url("font/redoctober.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
 }
 
 * {
@@ -241,6 +241,7 @@ section header ul li a:hover {
 .grid5 {
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "head head";
   width: 85%;
   margin-left: 15%;
   -webkit-box-pack: center;
@@ -249,8 +250,16 @@ section header ul li a:hover {
   background-color: #969696;
   -ms-grid-columns: 20% 20% 20% 20%;
       grid-template-columns: 20% 20% 20% 20%;
-  grid-column-gap: 2%;
+  grid-column-gap: 1%;
   color: #000000;
+}
+
+.grid5 .titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+  margin-top: 15%;
 }
 
 .grid5 img {
@@ -333,8 +342,8 @@ footer .redes {
   width: 100%;
 }
 
-footer .redes .redes ul li {
-  padding: 0;
+footer .redes ul li {
+  padding: 2%;
 }
 
 .ir-arriba {
@@ -379,24 +388,52 @@ footer .redes .redes ul li {
   display: block;
 }
 
-@media (min-width: 60em) {
+@media (max-width: 60em) {
   .banner6 {
     width: 80%;
   }
-  img {
-    width: 100%;
+  .grid5 {
+    -ms-grid-columns: 99%;
+        grid-template-columns: 99%;
   }
-  header nav a {
-    display: none;
+  .grid5 h4 {
+    padding-left: 5%;
+  }
+  .grid404 img {
+    padding: 7% 0 7% 0;
+  }
+  .grid3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 85%;
+        grid-template-columns: 85%;
+    margin-left: 15%;
+  }
+  .grid3 .grid8 h1 {
+    width: 80%;
+    font-size: 12rem;
+    padding: 5%;
+    margin-left: 0;
+  }
+  .grid {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin-top: 20%;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 35em) {
+@media (max-width: 40em) {
   .hamburguesa {
     display: -ms-grid;
     display: grid;
     z-index: 99;
     position: absolute;
+  }
+  .grid404 img {
+    padding: 40% 0 20% 0;
   }
   #menu_on {
     position: absolute;
@@ -405,7 +442,7 @@ footer .redes .redes ul li {
   }
   #menu_off {
     position: absolute;
-    z-index: 44;
+    z-index: 445;
     margin: 10% 0 0 3%;
   }
   .visible_menu nav {
@@ -421,10 +458,13 @@ footer .redes .redes ul li {
     width: 100%;
     z-index: 100;
   }
+  section {
+    background-color: white;
+  }
   section header .logo img {
     width: 100%;
-    height: 20%;
     position: absolute;
+    padding: 5% 20%;
   }
   .headerartista {
     height: 20%;
@@ -435,6 +475,12 @@ footer .redes .redes ul li {
   }
   .grid .form-consulta {
     width: 100%;
+  }
+  .grid {
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    margin: 0%;
   }
   .grid3 {
     display: -ms-grid;
@@ -447,7 +493,7 @@ footer .redes .redes ul li {
   }
   .grid3 .grid8 h1 {
     width: 80%;
-    font-size: 10rem;
+    font-size: 8rem;
     padding: 5%;
     margin-left: 0;
   }
@@ -470,19 +516,13 @@ footer .redes .redes ul li {
   .grid6 img {
     width: 100%;
   }
+  h3 {
+    font-size: 1.8rem;
+  }
   footer {
     width: 100%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    margin: 0;
-  }
-  .grid {
-    width: 100%;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    margin: 0;
-    width: 100%;
-    grid-template-columns: 100%;
     margin: 0;
   }
   .grid4 {
@@ -493,8 +533,8 @@ footer .redes .redes ul li {
   }
   .grid5 {
     width: 100%;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: 99%;
+        grid-template-columns: 99%;
     margin: 0;
   }
   .grid5 h4 {
