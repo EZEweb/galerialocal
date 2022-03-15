@@ -1,12 +1,17 @@
 .grid5{
     display: grid;
+    grid-template-areas: "head head";
     width:85%;
     margin-left:15%;
     justify-content: center;
     background-color: #969696;
     grid-template-columns: 20% 20% 20% 20%;
-    grid-column-gap: 2%;
+    grid-column-gap: 1%;
     color: $back-negro;
+    .titulo{ 
+        grid-area:head;
+        margin-top: 15%;
+    }
     img{
         width: 100%;
         padding: 15%;
